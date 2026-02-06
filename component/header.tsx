@@ -18,16 +18,15 @@ export default function Header() {
 
 const styles = StyleSheet.create ({
     header: {
-        backgroundColor: "#6d5534",
-        // padding: 10,
+        backgroundColor: "#503815",
         margin: 10,
         height: '30%',
-        width: '100%',
+        width: '90%',
   
     },
     h1: {
         color: "white",
-        fontSize: 20,
+        fontSize: 25,
         textAlign: 'center',
         paddingVertical: 25,
     }
