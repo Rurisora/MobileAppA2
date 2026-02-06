@@ -1,14 +1,14 @@
-import {View, Text, TouchableOpacity, StyleSheet} from 'react-native'
+import {View, Text, StyleSheet} from "react-native";
 
-export default function SelectRank() {
+export default function PlayerScale() {
     return (
     <View style={styles.selectheader}>
-        <Text style={styles.h3}>Select Rank</Text>
+        <Text style={styles.h3}>Player Scale</Text>
         <View style={styles.container}>
             <View style={styles.underlineBox}>
-                <Text style={styles.selectText}>High Rank</Text>
+                <Text style={styles.selectText}>Base Values</Text>
             </View>
-            <Text style={styles.symbol}>HR</Text>
+            <Text style={styles.symbol}>📄</Text>
         </View>
     </View>
     )

@@ -11,7 +11,7 @@ import {View, Text, StyleSheet} from "react-native";
 export default function Header() {
   return (
   <View style={styles.header}>
-    <Text style={styles.h1} numberOfLines={2}>Monster Hunter Wilds Monster Data</Text>
+    <Text style={styles.h1}>Monster Hunter Wilds Monster Data</Text>
   </View>
   );
 }
@@ -19,16 +19,18 @@ export default function Header() {
 const styles = StyleSheet.create ({
     header: {
         backgroundColor: "#503815",
-        height: '30%',
+        height: 110,
         width: '100%',
         paddingTop: 8,
   
     },
     h1: {
         color: "white",
-        fontSize: 20,
+        fontSize: 25,
         textAlign: 'center',
-        paddingVertical: 25,
+        paddingVertical: 15,
+        paddingLeft: 50,
+        paddingRight: 50,
     }
 })
 

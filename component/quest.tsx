@@ -1,15 +1,17 @@
-import {View, Text, TouchableOpacity, StyleSheet} from 'react-native';
+import {View, Text, Image, TouchableOpacity, StyleSheet} from 'react-native';
 
-
-export default function MonsterSearch() {
+export default function PickQuest() {
     return(
         <View style={styles.container}>
             <View style={styles.searchBar}>
-                <Text style={styles.icon}>🔍</Text>
-                <Text style={styles.text}>Large Monster</Text>
+                <Image source={require('../assets/images/mhwQicon.png')} style={styles.icon}/>
+                <Text style={styles.text}>Quest</Text>
                 <TouchableOpacity style={styles.clearBtn}>
-                    <Text style={styles.clearText}>Clear</Text>
+                    <Text style={styles.clearText}>Options</Text>
                 </TouchableOpacity>  
+                <TouchableOpacity style={styles.clearBtn1}>
+                    <Text style={styles.clearText}>📷</Text>
+                </TouchableOpacity> 
             </View>       
         </View>
     )
@@ -27,19 +29,18 @@ const styles = StyleSheet.create(
             alignItems: 'center',
             justifyContent: 'space-between',
             paddingVertical: 8,
-            paddingHorizontal: 10,
             borderRadius: 5,
-            minWidth: 300,
+            minWidth:300,
         },
         icon: {
-            flex: 1,
-            color: '#f1c40f',
-            fontSize: 18,
-            textAlign: 'left',
+            width: 40,
+            height: 40,
+            resizeMode: 'contain',
+            marginRight: 10,
         },
         text: {
             fontSize: 16,
-            flex: 4,
+            flex: 3,
             color: '#fff',
             textAlign: "left",
             paddingBottom: 5,
@@ -48,12 +49,22 @@ const styles = StyleSheet.create(
         },
         clearBtn: {
             alignItems: 'center',
-            backgroundColor: '#ffffff',
+            backgroundColor: '#e9bd2c',
             paddingHorizontal: 8,
             paddingVertical: 4,
             borderRadius: 3,
             justifyContent: 'center',
-            marginLeft: 10,
+            marginLeft: 5, 
+        },
+
+        clearBtn1: {
+            alignItems: 'center',
+            backgroundColor: '#77dd62',
+            paddingHorizontal: 8,
+            paddingVertical: 4,
+            borderRadius: 3,
+            justifyContent: 'center',
+            marginLeft: 5, 
         },
         clearText: {
             fontSize: 12,
